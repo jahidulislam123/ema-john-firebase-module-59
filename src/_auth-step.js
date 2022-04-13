@@ -3,7 +3,8 @@
  * 2: npm install
  * 3:create fire . inti .js and import getauth to export auth 
  * 4 : firebse setting go to authentication enable Email and Password auth
- * 5:
+ * 5: create login ,signup component setup route , 
+ * 6: attact form field handler and from submit handler
  * 
  * 
  * */ 
