@@ -1,8 +1,11 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const Shipment = () => {
+    const [user]=useAuthState(auth);
     const [email,setEmail]=useState('');
     const [name,setName]=useState('');
     const [address,setAddress]=useState('');
@@ -58,7 +61,7 @@ const Shipment = () => {
             </div>
             <div className="input-group">
                 <label htmlFor="email">Your Email</label>
-                <input onBlur={handleEmailBlur} type="text" name="" id="" required />
+                <input value={user?.email} readOnly type="text" name="" id="" required />
             </div>
             <div className='input-group'>
                 <label htmlFor="password">Address</label>
