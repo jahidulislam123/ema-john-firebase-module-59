@@ -35,7 +35,14 @@ const Shipment = () => {
     // }
 
     const handleCreateUser=event=>{
-        // event.preventDefault();
+        event.preventDefault();
+        const shipping ={
+            name,
+            email,
+            address,
+            phone
+        };
+        console.log(shipping);
         // if(add!==confirmPassword){
         //     setError('Your password did not match ')
         //     return;

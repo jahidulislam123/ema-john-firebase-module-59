@@ -10,6 +10,9 @@
  * 
  * 9; if user is created redirect to the expected page
  * 10: useSignInWithEmailAndPassword for sign in
+ * 11 : create RequreAuthComponent ==> cheak user exist , also tract user loacation 
+ * 12: in route wrap protected component  by using require auth component 
+ * 13: 
  * 
  * */ 
 
