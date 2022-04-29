@@ -9,7 +9,7 @@
  * 8: useCreateUserWithEmailAndPassword from react firebase hook
  * 
  * 9; if user is created redirect to the expected page
- * 10: useSignInWithEmailAndPassword for sign in
+ * 10: useSignInWithEmailAndPassword for sign in and login
  * 11 : create RequreAuthComponent ==> cheak user exist , also tract user loacation 
  * 12: in route wrap protected component  by using require auth component 
  * 13: 
@@ -21,10 +21,13 @@
 
 /**
  * 
- * hosting step
- * 1 npm install -g firebase tools
- * 2 fire base login
- * 3 firebase init 
- * 4 firebase deploy
+ * firebase  hosting step
+ * 1 npm install -g firebase tools (one time for your computer)
+ * npm run build
+ * 2 fire base login(one time for your computer)
+ * 3 firebase init ( one time for eact project)
+ * 4: npm run build(every time want to deploy build you project)
+ * 5 :firebase deploy (every time want to deploy build you project)
+ * 
  * 
  * */
